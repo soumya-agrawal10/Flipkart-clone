@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<!--we can comment like this, use ctrl and right slash to comment-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <!-- font awesome icon library -->
+    <link rel="stylesheet" href="
+http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+    /* css code for slider */
+    .mySlides {
+        display: none;
+    }
+
+    /* code for star rating */
+    :checked {
+        color: orange;
+    }
+
+    /* code for dropdown  */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #2874F0;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
+        padding: 12px 16px;
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body>
+    <!-- code for slider  -->
+    <script>
+        var myIndex = 0;
+        carouse1();
+
+        function carouse1() {
+            var i;
+            var x = document.getElementsByClassName("myslides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+            // change image every 3 seconds
+        }
+    </script>
+
+    <table width="100%" height="20%" bgcolor="#2874F0">
+
+        <tr border="1" , style="height: 15%;">
+            <td align="right"> <img src="flipkart logo.png" width="70" height="40"></td>
+            <td> <input type="text" placeholder="search for products brands and more" style="width:550px; height:25px;">
+                <input type="button" value="search" style="width:120px; height: 25px;">
+            </td>
+            <th style="color: white;" style="font-size: large;"> login and signup
+            </th>
+            <th style="color: white;"> more
+            </th>
+            <td align="left "> <img src="cart.png" width="60" height="30"> </td>
+        </tr>
+    </table>
+    
+    <table border="0" width="100%" bgcolor="white" style="height: 30px;">
+        <tr>
+            <th width="12.5%">
+                <div class="dropdown"> <span> Electronics </span>
+                    <div class="dropdown-content">
+                        <p>Mobiles</p>
+                        <p>Headphones</p>
+                        <p>Kitchen appliances</p>
+                        <p>Refrigerator</p>
+                    </div>
+                </div>
+            </th>
+
+            <th width="12.5%">
+                <div class="dropdown"> <span> Clothing </span>
+                    <div class="dropdown-content">
+                        <p>Dresses</p>
+                        <p>Kurta sets</p>
+                        <p>Sarees</p>
+                        <p>Shirts</p>
+                    </div>
+                </div>
+            </th>
+
+            <th width="12.5%">
+                <div class="dropdown"> <span> Footwear </span>
+                    <div class="dropdown-content">
+                        <p>Sandals</p>
+                        <p>Shoes</p>
+                        <p>Slippers</p>
+
+                    </div>
+                </div>
+            </th>
+
+            <th width="12.5%"> Mobiles</th>
+            </th>
+            <th width="12.5%">Kids Zone</th>
+            <th width="12.5%">Home and Furniture</th>
+            <th width="12.5%">Sports, Books and More</th>
+            <th width="12.5%">Offer zone</th>
+        </tr>
+    </table>
+
+    <div class="w3-content w3-section" style="max-width: 1350px;">
+        <img class="mySlides" src="banner2.png" style="width: 100%;">
+        <img class="mySlides" src="banner3.png" style="width: 100%;">
+    </div>
+    <br>
+
+    <table border="0" width="100%" bgcolor="white">
+        <tr>
+        <tr aria-colspan="3">
+            <h2> School bags </h2>
+        </tr>
+        </tr>
+        <tr>
+            <th> <img src="bag1.jpeg"> </th>
+            <th> <img src="bag2.jpeg"> </th>
+            <th> <img src="bag3.png"> </th>
+        </tr>
+        <tr>
+            <th>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star" style="color: black;"></span>
+            </th>
+
+            <th>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star" style="color: black;"></span>
+            </th>
+
+            <th>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star" style="color:black;"></span>
+                <span class="fa fa-star" style="color: black;"></span>
+            </th>
+        </tr>
+        <tr>
+            <th>price <font color="green">:599/- </font>
+            </th>
+            <th>price:<font color="green">:550/- </font>
+            </th>
+            <th>price:<font color="green">:499/- </font>
+            </th>
+
+        </tr>
+        <tr>
+            <th> <input type="button" value="show details"
+                    style="width:150px; height:35px; background-color:blue; color: white; border: 0ch;"> </th>
+            <th> <input type="button" value="show details"
+                    style="width:150px; height:35px; background-color:blue; color: white; border: 0ch;"> </th>
+            <th> <input type="button" value="show details"
+                    style="width:150px; height:35px; background-color:blue; color: white; border: 0ch;"> </th>
+        </tr>
+    </table>
+    <br><br>
+    <table border="0" width="100%" bgcolor="white">
+        <tr aria-colspan="3">
+            <h2>Earphones</h2>
+        </tr>
+        <tr>
+            <th> <img src="earphone1.png"></th>
+            <th> <img src="earphone3.png"></th>
+            <th> <img src="earphone2.png"></th>
+        </tr>
+        <tr>
+            <th>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star" style="color: black;"></span>
+            </th>
+
+            <th>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star" style="color: black;"></span>
+            </th>
+
+            <th>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star" style="color:black;"></span>
+                <span class="fa fa-star" style="color: black;"></span>
+            </th>
+        </tr>
+        <tr>
+            <th>price <font color="green">:599/- </font>
+            </th>
+            <th>price:<font color="green">:550/- </font>
+            </th>
+            <th>price:<font color="green">:499/- </font>
+            </th>
+
+        </tr>
+        <tr>
+            <th> <input type="button" value="show details"
+                    style="width:150px; height:35px; background-color:blue; color: white; border: 0ch;"> </th>
+            <th> <input type="button" value="show details"
+                    style="width:150px; height:35px; background-color:blue; color: white; border: 0ch;"> </th>
+            <th> <input type="button" value="show details"
+                    style="width:150px; height:35px; background-color:blue; color: white; border: 0ch;"> </th>
+        </tr>
+    </table>
+    <br><br>
+    <table border="0" width="100%" bgcolor="white">
+        <tr aria-colspan="3">
+            <h2>Mobile phones</h2>
+        </tr>
+        <tr>
+            <th> <img src="mobile1.png"></th>
+            <th> <img src="mobile3.png"></th>
+            <th> <img src="mobile2.png"></th>
+        </tr>
+        <tr>
+            <th>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star" style="color: black;"></span>
+            </th>
+            <th>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star" style="color: black;"></span>
+            </th>
+            <th>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star checked" style="color:orange;"></span>
+                <span class="fa fa-star" style="color: black;"></span>
+            </th>
+        </tr>
+        <tr>
+            <th>price <font color="green">:599/- </font>
+            </th>
+            <th>price:<font color="green">:550/- </font>
+            </th>
+            <th>price:<font color="green">:499/- </font>
+            </th>
+
+        </tr>
+        <tr>
+            <th> <input type="button" value="show details"
+                    style="width:150px; height:35px; background-color:blue; color: white; border: 0ch;"> </th>
+            <th> <input type="button" value="show details"
+                    style="width:150px; height:35px; background-color:blue; color: white; border: 0ch;"> </th>
+            <th> <input type="button" value="show details"
+                    style="width:150px; height:35px; background-color:blue; color: white; border: 0ch;"> </th>
+        </tr>
+    </table>
+    <table border="3" width="100%" bgcolor="#2874F0">
+        <tr>
+            <td bgcolor="black">
+                <font color="white"></font><b> Quick links </b>
+            </td>
+            <td bgcolor="black">
+                <font color="white"></font> <b> Follow us </b>
+            </td>
+            <td bgcolor="black">
+                <font color="white"></font> <b>Contact</b>
+            </td>
+            <td bgcolor="black">
+                <font color="white"></font> <b>Search</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>
+                        <font color="white"> Electronics</font>
+                    </li>
+                    <li>
+                        <font color="white">Clothing</font>
+                    </li>
+                    <li>
+                        <font color="white">Footwear</font>
+                    </li>
+                    <li>
+                        <font color="white">Mobiles</font>
+                    </li>
+                    <li>
+                        <font color="white">Kids Zone</font>
+                    </li>
+                    <li>
+                        <font color="white">Home and Furniture</font>
+                    </li>
+                    <li>
+                        <font color="white">Sports,Books and More</font>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        <font color="white">Facebook</font>
+                    </li>
+                    <li>
+                        <font color="white">Twitter</font>
+                    </li>
+                    <li>
+                        <font color="white">Instagram</font>
+                    </li>
+                    <li>
+                        <font color="white">Youtube</font>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        <font color="white">Soumya Agrawal </font>
+                    </li>
+                    <li>
+                        <font color="white">9876543210 </font>
+                    </li>
+                    <li>
+                        <font color="white">India </font>
+                    </li>
+                    <li>
+                        <font color="white">840000 </font>
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <input type="text" placeholder="search">
+                <input type="button" value="search">
+            </td>
+        </tr>
+    </table>
+</body>
+
+
+</html>
+
+
+<!-- <table border="0" width="100%" bgcolor="white">
+		<tr style="width: 30px;">
+			<th>
+
+			<li class="dropdown">
+		 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Electronics
+    <span class="caret"></span></button>
+		
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#"> Mobile</a></li>
+					<li><a href="#"> Pants</a></li>
+					<li><a href="#"> Shoes</a></li>
+					<li><a href="file:///C:/first/laptop.html">Laptops</a></li>
+									
+				</div>
+			</div>
+			</th>
+
+			<th>
+
+			<div class="dropdown">
+			<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Tv & Applications
+    <span class="caret"></span></button>	 
+				<ul class="dropdown-menu"role="menu" >
+					<li> <a href="file:///C:/first/tv.html"> L.E.D</a></li>
+					<li> <a href="#">L.C.D</a></li>
+					<li><a href="#"> T.V. tools</a></li>
+					<li><a href="#"> Set-top Box</a></li>					
+				</div>
+			</div>
+			</th>
+		
+			<th>
+				<div class="dropdown">
+				<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Men
+    <span class="caret"></span></button>
+				<ul class="dropdown-menu" role="menu">
+					<p><a href="file:///D:/xampp_file//htdocs/old_file/v_cart//men.html"> Clothes</a></p>
+					<p> Watch</p>
+					<p> Sun-Glasses</p>
+					<p> Shoes</p>
+					<p> Belts</p>
+					<p> Mens cream,tools & More</p>
+				</div>
+			</div>
+			</th>
+
+			<th>
+					<div class="dropdown">
+				<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Women
+    <span class="caret"></span></button>
+				<div class="dropdown-menu">
+					<p><a href="file:///C:/first/women.html"> Clothes</a></p>
+					<p> Watch</p>
+					<p> Sun-Glasses</p>
+					<p> Sandles</p>
+					<p> Hair Bands</p>
+					<p> Womens cream,tools & More</p>
+
+				</div>
+			</div>
+			</th>
+			<th>
+						<div class="dropdown">
+				<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Kids 
+    <span class="caret"></span></button>
+				<div class="dropdown-menu">
+					<p><a href="file:///C:/first/child.html"> Clothes</a></p>
+					<p> Nepkins</p>
+					<p> Baby toys</p>
+					<p> Shoes & Sleepers</p>
+					<p> Hair Bands</p>
+					<p> Baby cream,tools & More</p>
+
+				</div>
+			</div>
+			</th>
+			<th>
+				<div class="dropdown">
+				<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Home & furniture
+    <span class="caret"></span></button>
+				<div class="dropdown-menu">
+					<p> Kitchen tools</p>
+					<p> Crockries</p>
+					<p><a href="file:///C:/first/furniture.html"> Beds</a></p>
+					<p> Tables</p>
+					<p> Almira</p>
+					<p> Sofa</p>
+					<p> More</p>
+					
+				</div>
+			</div>
+		</th>
+			<th>
+			<div class="dropdown">
+				<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Books, sports & more
+    <span class="caret"></span></button>
+				<div class="dropdown-menu">
+					<p> Books</p>
+					<p> Cricket tools </p>
+					<p> Football</p>
+					<p> more</p>
+					
+				</div>
+			</div>
+		</th></th>
+		<th>
+			<div class="dropdown">
+			<button class="btn dropdown-toggle" type="button" data-toggle="dropdown">vegetable
+    <span class="caret"></span></button>
+    			<div class="dropdown-menu">
+    			</th>
+    			<th>
+    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Offer
+    <span class="caret"></span></button>
+    				<div class="dropdown-menu">
+		</th>
+		</tr>
+	</button>
+	</table> -->
